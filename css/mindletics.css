@@ -12,6 +12,7 @@ html {
 
 body {
     font-family: Atkinson Hyperlegible;
+    color: var(--wit);
     margin: 0;
     background-color: var(--paars) ;
 }

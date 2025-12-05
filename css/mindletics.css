@@ -3,6 +3,8 @@ html {
     --zwart: #1C1C1C;
     --paars: #A874D2;
     --groen: #7DDE92;
+
+    --fontsizeP: 1.2em;
 }
 
 @font-face {
@@ -19,4 +21,33 @@ body {
 
 nav {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    padding: 0.5em 1em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+p {
+    font-size: var(--fontsizeP);
+}
+
+main, footer {
+    padding: 1em;
+}
+
+.cta {
+    text-decoration: none;
+    color: var(--wit);
+    background-color: var(--groen);
+    font-size: 3em;
+    padding: ;
+}
+
+.mindydumbbell {
+    position: absolute;
+    width: 30em;
+    top: 200px;
+    right: -150px;
+    z-index: -99;
 }

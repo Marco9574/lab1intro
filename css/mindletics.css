@@ -64,7 +64,7 @@ main, footer {
     z-index: -99;
 }
 
-.kernwaardensection h2, .merch h2, .faq h2 {
+.kernwaardensection h2, .merch h2, .faq h2, .contact h2 {
     text-align: center;
 }
 
@@ -116,4 +116,33 @@ main, footer {
     margin: 1em;
     border-radius: 1em;
     border: 3px solid var(--wit);
+}
+
+.faq summary {
+    font-size: var(--fontsizeP);
+    cursor: pointer;
+}
+
+.contact form div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.contact input {
+    box-sizing: border-box;
+    height: 2.5em;
+    border: none;
+    border-radius: 99px;
+}
+
+.contact input[type=submit] {
+    
+}
+
+
+
+footer {
+    border-top: 2px solid var(--wit);
+    text-align: center;
 }

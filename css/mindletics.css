@@ -134,10 +134,20 @@ main, footer {
     height: 2.5em;
     border: none;
     border-radius: 99px;
+    font-size: var(--fontsizeP);
+    font-family: Atkinson Hyperlegible;
+    width: 100%;
 }
 
 .contact input[type=submit] {
-    
+    font-weight: bold;
+    color: var(--wit);
+    background-color: var(--groen);
+    font-size: 1.5em;
+    /*padding: 0.2em 0.8em;*/
+    border-radius: 999px;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
 }
 
 

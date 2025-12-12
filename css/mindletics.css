@@ -108,3 +108,12 @@ main, footer {
 .merchitems img {
     width: 100%;
 }
+
+.faq details {
+    background-color: var(--paars);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    border: 3px solid var(--wit);
+}

@@ -129,14 +129,23 @@ main, footer {
     margin: 1em;
 }
 
+.contact label {
+    font-size: var(--fontsizeP);
+    padding-bottom: 0.3em;
+}
+
 .contact input {
     box-sizing: border-box;
     height: 2.5em;
     border: none;
-    border-radius: 99px;
+    border-radius: 24px;
     font-size: var(--fontsizeP);
     font-family: Atkinson Hyperlegible;
     width: 100%;
+}
+
+#bericht {
+    height: 10em;
 }
 
 .contact input[type=submit] {
@@ -150,9 +159,35 @@ main, footer {
     cursor: pointer;
 }
 
-
+.contact img {
+    display: block;
+    margin: 0 auto;
+}
 
 footer {
     border-top: 2px solid var(--wit);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 2em;
+}
+
+.footerlogo {
+    width: 15em;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.socials a {
+    height: 24px;
 }

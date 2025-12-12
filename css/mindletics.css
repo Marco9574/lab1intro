@@ -49,7 +49,7 @@ main, footer {
     color: var(--wit);
     background-color: var(--groen);
     font-size: 3em;
-    padding: 0 1em;
+    padding: 0.2em 0.8em;
     border-radius: 999px;
     filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
 }
@@ -60,4 +60,23 @@ main, footer {
     top: 200px;
     right: -150px;
     z-index: -99;
+}
+
+.kernwaardensection h2 {
+    text-align: center;
+}
+
+.kernwaarden {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    text-align: center;
+}
+
+.kernwaarden img {
+    width: 4em;
+}
+
+.kernwaarden p {
+    margin: 0;
 }

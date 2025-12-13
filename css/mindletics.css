@@ -59,6 +59,40 @@ nav {
     width: 8em;
 }
 
+.menu_x {
+    display: none;
+}
+
+.dropdown-label {
+    cursor: pointer;
+}
+
+.dropdown input {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--paars);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.dropdown-toggle:checked ~ .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle:checked ~ .dropdown-label .menu_x {
+    display: inline;
+}
+
+.dropdown-toggle:checked ~ .dropdown-label .menu_hamburger {
+    display: none;
+}
+
 section, footer, header {
     padding: 0 1em;
 }

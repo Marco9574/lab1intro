@@ -6,6 +6,8 @@ html {
 
     --fontsizeP: 1.2em;
     --fontsizeH2: 1.8em;
+
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -51,6 +53,7 @@ nav {
     padding: 0.5em 1em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--paars);
     z-index: 999;
 }
@@ -76,9 +79,33 @@ nav {
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
     background-color: var(--paars);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    list-style: none;
+    padding: 0;
+    border-top: 2px solid var(--wit);
+    margin: 3em 0 0 0;
+}
 
+.dropdown-menu li:hover {
+    background-color: #9763c1;
+}
+
+.dropdown-menu a {
+    display: flex;
+    text-decoration: none;
+    color: var(--wit);
+    font-weight: bold;
+    font-size: 1.5em;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+}
+
+section[id] {
+    scroll-margin-top: 200px;
 }
 
 .dropdown-toggle:checked ~ .dropdown-menu {

@@ -7,6 +7,8 @@ html {
     --fontsizeP: 1.2em;
     --fontsizeH2: 1.8em;
 
+    --padding: 1em;
+
     scroll-behavior: smooth;
 }
 
@@ -62,6 +64,10 @@ nav {
     width: 8em;
 }
 
+.dropdown-label img {
+    width: 1.5em;
+}
+
 .menu_x {
     display: none;
 }
@@ -98,7 +104,6 @@ nav {
     color: var(--wit);
     font-weight: bold;
     font-size: 1.5em;
-    flex-basis: 100%;
     justify-content: center;
     align-items: center;
     height: 2em;
@@ -121,14 +126,18 @@ section[id] {
 }
 
 section, footer, header {
-    padding: 0 1em;
+    padding: 0 var(--padding);
 }
 
 section {
     margin-top: 3em;
 }
 
-.cta, .koopbtn {
+.contact input[type=submit] {
+    all: unset;
+}
+
+.cta, .koopbtn, .contact input[type=submit] {
     text-decoration: none;
     font-weight: bold;
     color: var(--wit);
@@ -145,14 +154,13 @@ section {
 }
 
 .mindydumbbell {
-    /*position: absolute;
-    width: 30em;
-    top: 200px;
-    right: -150px;
-    z-index: -99;*/
     order: 1;
     height: 15em;
     margin: 0 auto;
+}
+
+.mindydumbbelltablet {
+    display: none;
 }
 
 header {
@@ -269,24 +277,10 @@ header p {
     height: 10em;
 }
 
-.contact input[type=submit] {
-    all: unset;
-
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--wit);
-    background-color: var(--groen);
-    font-size: 2em;
-    padding: 0.2em 0.8em;
-    border-radius: 999px;
-    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
-    text-align: center;
-}
-
 .contact img {
     display: block;
     margin: 0 auto;
-    width: 15em;
+    width: 75%;
 }
 
 footer {
@@ -317,4 +311,70 @@ footer p {
 
 .socials a {
     height: 24px;
+}
+
+
+@media (min-width: 700px) {
+    html {
+        --fontsizeP: 1.8em;
+        --fontsizeH2: 2.4em;
+
+        --padding: 2.5em;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    .navlogo {
+        width: 15em;
+    }
+
+    .dropdown-label img {
+        width: 2.2em;
+    }
+
+    .mindydumbbell {
+        display: none;
+    }
+    
+    .mindydumbbelltablet {
+        display: inline;
+        position: absolute;
+        right: 0;
+        top: 180px;
+        z-index: -999;
+    }
+
+    header p {
+        padding-right: 10em;
+        padding-bottom: 1em;
+    }
+
+    .cta {
+        width: 50%;
+    }
+
+    .cta, .koopbtn, .contact input[type=submit] {
+        font-size: 3em;
+        padding: 0.2em 0.8em;
+    }
+
+    .dropdown-menu {
+        margin-top: 4.5em;
+    }
+
+    .dropdown-menu a {
+        font-size: 2.5em;
+        height: 2.5em;
+    }
+
+    .kernwaarden img {
+        width: 5.5em;
+    }
+
+    .kernwaarden p {
+        margin: 0;
+        font-size: var(--fontsizeP)
+    }
 }

@@ -49,11 +49,7 @@ p {
 }
 
 main section, footer, header {
-    padding: 1em;
-}
-
-.doel img {
-    padding: 0;
+    padding: 0 1em;
 }
 
 .cta, .koopbtn {
@@ -115,8 +111,9 @@ header p {
     font-size: 1em;
 }
 
-.doel img, .activiteiten img {
+.klimmenillustratie, .fietsenillustratie {
     width: 100%;
+    margin-top: -6em;
 }
 
 .merchitems {

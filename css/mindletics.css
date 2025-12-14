@@ -60,16 +60,17 @@ nav {
     left: 0;
     right: 0;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
-    padding: 0.5em 1em;
+    padding: 0.5em var(--padding);
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--paars);
     z-index: 999;
+    height: 3em;
 }
 
 .navlogo {
-    width: 8em;
+    height: 2em;
 }
 
 .dropdown-label img {
@@ -99,7 +100,7 @@ nav {
     list-style: none;
     padding: 0;
     border-top: 2px solid var(--wit);
-    margin: 3em 0 0 0;
+    margin: 4em 0 0 0;
 }
 
 .dropdown-menu li:hover {
@@ -323,8 +324,8 @@ footer p {
 
 @media (min-width: 700px) {
     html {
-        --fontsizeP: 1.8em;
-        --fontsizeH2: 2.6em;
+        --fontsizeP: 1.3em;
+        --fontsizeH2: 2.4em;
 
         --padding: 2.5em;
         --sectionmargin: 6em;
@@ -336,10 +337,6 @@ footer p {
 
     h1 {
         font-size: 6em;
-    }
-
-    .navlogo {
-        width: 15em;
     }
 
     .dropdown-label img {
@@ -364,16 +361,12 @@ footer p {
     }
 
     .cta {
-        width: 50%;
+        width: 40%;
     }
 
     .cta, .koopbtn, .contact input[type=submit] {
         font-size: 2.6em;
         padding: 0.2em 0.8em;
-    }
-
-    .dropdown-menu {
-        margin-top: 4.5em;
     }
 
     .dropdown-menu a {
@@ -410,14 +403,14 @@ footer p {
         position: absolute;
         left: 0;
         width: 65%;
-        margin-top: -32em;
+        margin-top: -30em;
     }
 
     .fietsentablet {
         position: absolute;
         right: 0;
         width: 55%;
-        margin-top: -38em;
+        margin-top: -33em;
     }
 
     .faq details {
@@ -445,7 +438,7 @@ footer p {
 
         --scrolloffset: 190px;
     }
-
+    
     .dropdown-menu {
         width: 50%;
         left: 50%;
@@ -468,13 +461,21 @@ footer p {
     }
 
     .klimmentablet {
-        margin-top: -35em;
-        width: 60%;
+        margin-top: -27em;
+        width: 50%;
     }
 
     .fietsentablet {
-        margin-top: -40em;
-        width: 50%;
+        margin-top: -29em;
+        width: 40%;
+    }
+
+    #doelsection {
+        margin-left: 40%;
+    }
+
+    #activiteitensection {
+        margin-right: 40%;
     }
 
     .merchitems {
@@ -486,6 +487,15 @@ footer p {
         border-radius: 30.957px;
     }
 
+    .contact h2 {
+        text-align: start;
+    }
+
+    .contact {
+        display: flex;
+        margin-bottom: 5em;
+    }
+
     .contact input {
         border-radius: 27px;
     }
@@ -493,8 +503,6 @@ footer p {
     .contact form {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /*width: 75%;*/
-        margin: 0 auto;
     }
 
     .emailinput {
@@ -525,10 +533,6 @@ footer p {
         padding-left: 0.5em;
     }
 
-    .mindysdialog {
-        width: 55%;
-    }
-
     .footerlogo {
         width: 20%;
     }
@@ -539,15 +543,6 @@ footer p {
 
     .socials img {
         width: 2.5em;
-    }
-
-    .contact h2 {
-        text-align: start;
-    }
-
-    .contact {
-        /*padding-left: 50%;*/
-        display: flex;
     }
 
     .mindysdialog {

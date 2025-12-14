@@ -10,7 +10,9 @@ html {
     --H2stroke: 4px;
 
     --padding: 1em;
+    --sectionmargin: 3em;
 
+    --scrolloffset: 200px;
     scroll-behavior: smooth;
 }
 
@@ -116,7 +118,7 @@ nav {
 }
 
 section[id] {
-    scroll-margin-top: 200px;
+    scroll-margin-top: var(--scrolloffset);
 }
 
 .dropdown-toggle:checked ~ .dropdown-menu {
@@ -136,7 +138,7 @@ section, footer, header {
 }
 
 section {
-    margin-top: 3em;
+    margin-top: var(--sectionmargin);
 }
 
 .contact input[type=submit] {
@@ -325,8 +327,11 @@ footer p {
         --fontsizeH2: 2.6em;
 
         --padding: 2.5em;
+        --sectionmargin: 6em;
 
         --H2stroke: 6px;
+
+        --scrolloffset: 500px;
     }
 
     h1 {
@@ -385,10 +390,6 @@ footer p {
         font-size: var(--fontsizeP)
     }
 
-    section {
-        margin-top: 6em;
-    }
-
     .fietsenmobile, .klimmenmobile {
         display: none;
     }
@@ -423,8 +424,42 @@ footer p {
         width: 2.5em;
         display: block;
     }
+}
 
-    section[id] {
-        scroll-margin-top: 500px;
+@media (min-width: 1000px) {
+    html {
+        --fontsizeP: 1.3em;
+        --fontsizeH2: 3em;
+
+        --padding: 4.5em;
+        --sectionmargin: 10em;
+
+        --H2stroke: 7px;
+
+        --scrolloffset: 190px;
+    }
+
+    .dropdown-menu {
+        width: 50%;
+        left: 50%;
+    }
+
+    .dropdown-menu a {
+        font-size: 1.5em;
+    }
+
+    .klimmentablet {
+        margin-top: -35em;
+        width: 60%;
+    }
+
+    .fietsentablet {
+        margin-top: -40em;
+        width: 50%;
+    }
+
+    .merchitems {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2em;
     }
 }

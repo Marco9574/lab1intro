@@ -283,7 +283,7 @@ header p {
     height: 10em;
 }
 
-.contact img {
+.mindysdialog {
     display: block;
     margin: 0 auto;
     width: 75%;
@@ -420,9 +420,16 @@ footer p {
         margin-top: -38em;
     }
 
+    .faq details {
+        border-radius: 35.5545px;
+    }
+
+    .contact input {
+        border-radius: 36px;
+    }
+
     .socials img {
         width: 2.5em;
-        display: block;
     }
 }
 
@@ -448,6 +455,18 @@ footer p {
         font-size: 1.5em;
     }
 
+    h1 {
+        padding-right: 2em;
+    }
+
+    .mindydumbbelltablet {
+        top: 100px;
+    }
+
+    header p {
+        padding-right: 13em;
+    }
+
     .klimmentablet {
         margin-top: -35em;
         width: 60%;
@@ -461,5 +480,85 @@ footer p {
     .merchitems {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2em;
+    }
+
+    .faq details {
+        border-radius: 30.957px;
+    }
+
+    .contact input {
+        border-radius: 27px;
+    }
+
+    .contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*width: 75%;*/
+        margin: 0 auto;
+    }
+
+    .emailinput {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .subjectinput {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .messageinput {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .submitinput {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+
+    .nameinput {
+        padding-right: 0.5em;
+    }
+
+    .lastnameinput {
+        padding-left: 0.5em;
+    }
+
+    .mindysdialog {
+        width: 55%;
+    }
+
+    .footerlogo {
+        width: 20%;
+    }
+
+    .socials {
+        width: 30%;
+    }
+
+    .socials img {
+        width: 2.5em;
+    }
+
+    .contact h2 {
+        text-align: start;
+    }
+
+    .contact {
+        /*padding-left: 50%;*/
+        display: flex;
+    }
+
+    .mindysdialog {
+        margin: 0;
+        width: 100%;
+    }
+
+    .mindysdialogcontainer {
+        order: -1;
+        flex-basis: 50%;
+        align-content: center;
+        padding-right: 1em;
     }
 }

@@ -73,6 +73,10 @@ nav {
     height: 2em;
 }
 
+.desktoplinks {
+    display: none;
+}
+
 .dropdown-label img {
     width: 1.5em;
 }
@@ -439,13 +443,27 @@ footer p {
         --scrolloffset: 190px;
     }
     
-    .dropdown-menu {
+    /*.dropdown-menu {
         width: 50%;
         left: 50%;
     }
 
     .dropdown-menu a {
         font-size: 1.5em;
+    }*/
+
+    .dropdown {
+        display: none;
+    }
+
+    .desktoplinks {
+        display: flex;
+        gap: 2.5em;
+    }
+
+    .desktoplinks a {
+        text-decoration: none;
+        color: var(--wit);
     }
 
     h1 {
@@ -461,7 +479,7 @@ footer p {
     }
 
     .klimmentablet {
-        margin-top: -27em;
+        margin-top: -30em;
         width: 50%;
     }
 
